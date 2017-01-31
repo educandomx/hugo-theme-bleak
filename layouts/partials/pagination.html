@@ -1,11 +1,11 @@
 <nav id="pagination" class="pagination" role="pagination">
 	<div class="inner">
 	{{if .HasPrev}}
-	  <a class="pagination-item pagination-next" href="{{ .Prev.URL }}"><i class="icon-arrow-left"></i> <span>Newer Posts</span></a>
+	  <a class="pagination-item pagination-next" href="{{ .Prev.URL }}"><i class="icon-arrow-left"></i> <span>Entradas recientes</span></a>
 	{{end}}
-		<span class="pagination-info">Page {{ .PageNumber }} of {{.TotalPages}}</span>
+		<span class="pagination-info">Pagina {{ .PageNumber }} de {{.TotalPages}}</span>
 	{{if .HasNext}}
-	  <a class="pagination-item pagination-prev" href="{{ .Next.URL }}"><span>Older Posts</span> <i class="icon-arrow-right"></i></a>
+	  <a class="pagination-item pagination-prev" href="{{ .Next.URL }}"><span>Entradas antiguas</span> <i class="icon-arrow-right"></i></a>
 	{{end}}
 		<div class="clear"></div>
 	</div>
